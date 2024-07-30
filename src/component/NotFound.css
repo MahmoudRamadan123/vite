@@ -1,0 +1,161 @@
+/* Define base colors and sizes */
+:root {
+    --bg-color: #f7f7f7;
+    --jagged-distance: 32px;
+    
+    --boo-size: calc(var(--jagged-distance) * 5);
+    --boo-bg: var(--bg-color);
+    --boo-shadow: #e0e0e0; /* Darken var(--boo-bg) by 5% */
+    
+    --boo-face-size: calc(var(--jagged-distance) / 1.3333);
+    --boo-face-color: #9b9b9b;
+  }
+  
+  /* Keyframes for floating animation */
+  @keyframes floating {
+    0% {
+      transform: translate3d(0, 0, 0);  
+    }
+    45% {
+      transform: translate3d(0, -10%, 0);  
+    }
+    55% {
+      transform: translate3d(0, -10%, 0);  
+    }  
+    100% {
+      transform: translate3d(0, 0, 0);
+    }  
+  }
+  
+  /* Keyframes for floating shadow animation */
+  @keyframes floatingShadow {
+    0% {
+      transform: scale(1);  
+    }
+    45% {
+      transform: scale(.85);  
+    }
+    55% {
+      transform: scale(.85);  
+    }  
+    100% {
+      transform: scale(1);
+    }  
+  }
+  
+  /* Helper mixin converted into plain CSS */
+  .border-bottom-jagged {
+    position: relative;
+    padding-bottom: var(--jagged-distance); 
+  
+    /* Pseudo-element for jagged border bottom */
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(-var(--jagged-distance) / 1.7);
+    bottom: calc(-var(--jagged-distance) / 3.85);
+    width: calc(100% + var(--jagged-distance));
+    height: var(--jagged-distance);
+    background-repeat: repeat-x;
+    background-size: var(--jagged-distance) var(--jagged-distance);
+    background-position: left bottom;
+    background-image: 
+      linear-gradient(-45deg, var(--bg-color) calc(var(--jagged-distance) / 2), transparent 0),
+      linear-gradient(45deg, var(--bg-color) calc(var(--jagged-distance) / 2), transparent 0),
+      linear-gradient(-45deg, var(--boo-face-color) calc(var(--jagged-distance) / 1.7), transparent 0),
+      linear-gradient(45deg, var(--boo-face-color) calc(var(--jagged-distance) / 1.7), transparent 0);
+  }
+  
+
+  
+  .container {
+    font-family: 'Varela Round', sans-serif;
+    color: var(--boo-face-color);
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    font-size: calc(var(--jagged-distance) / 2);
+  }
+  
+  h1 {
+    font-size: var(--jagged-distance);
+    margin-top: var(--jagged-distance);
+  }
+  
+  /* Boo wrapper */
+  .boo-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: calc(var(--jagged-distance) * 2);
+    padding-bottom: calc(var(--jagged-distance) * 2);
+  }
+  
+  /* Boo element */
+  .boo {
+    width: var(--boo-size);
+    height: calc(var(--boo-size) + (var(--boo-size) * .15));
+    background-color: var(--boo-bg);
+    margin-left: auto;
+    margin-right: auto;
+    border: calc(var(--jagged-distance) / 1.65 - var(--jagged-distance) / 2) solid var(--boo-face-color);
+    border-bottom: 0;
+    overflow: hidden;
+    border-radius: calc(var(--boo-size) / 2) calc(var(--boo-size) / 2) 0 0;
+    box-shadow: calc(-var(--jagged-distance) / 2) 0 0 2px rgba(var(--boo-shadow), .5) inset;
+    /* Apply jagged border */
+    border-bottom: calc(var(--jagged-distance) / 1.7);
+    background-image: 
+      linear-gradient(-45deg, var(--bg-color) calc(var(--jagged-distance) / 2), transparent 0),
+      linear-gradient(45deg, var(--bg-color) calc(var(--jagged-distance) / 2), transparent 0),
+      linear-gradient(-45deg, var(--boo-face-color) calc(var(--jagged-distance) / 1.7), transparent 0),
+      linear-gradient(45deg, var(--boo-face-color) calc(var(--jagged-distance) / 1.7), transparent 0);
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  /* Boo face */
+  .boo .face {
+    width: var(--boo-face-size);
+    height: calc(var(--jagged-distance) / 10);
+    border-radius: 5px;
+    background-color: var(--boo-face-color);
+    position: absolute;
+    left: 50%;
+    bottom: calc(var(--jagged-distance) + var(--boo-face-size));
+    transform: translateX(-50%);
+  }
+  
+  .boo .face::before,
+  .boo .face::after {
+    content: '';
+    display: block;
+    width: calc(var(--boo-face-size) / 4);
+    height: calc(var(--boo-face-size) / 4);
+    background-color: var(--boo-face-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(var(--jagged-distance) + (var(--boo-face-size) / 3));
+  }
+  
+  .boo .face::before {
+    left: calc(-1 * var(--boo-face-size));
+  }
+  
+  .boo .face::after {
+    right: calc(-1 * var(--boo-face-size));
+  }
+  
+  /* Shadow element */
+  .shadow {
+    width: calc(var(--boo-size) - var(--jagged-distance));
+    height: calc(var(--jagged-distance) / 2);
+    background-color: rgba(var(--boo-shadow), .75);
+    margin-top: calc(var(--jagged-distance) * 1.25);  
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    animation: floatingShadow 3s ease-in-out infinite;
+  }
+  

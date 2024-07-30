@@ -1,0 +1,64 @@
+/* src/css/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-sidebar {
+    width: 250px;
+    background-color: #6ee3e7; /* Light blue background */
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+}
+
+.sidebar-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sidebar-item {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+    background-color: #ffffff; /* White background on hover */
+    color: #6ee3e7; /* Light blue text */
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.dashboard-content > div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dashboard-content > div {
+    animation: fadeIn 0.5s ease-in-out;
+}

@@ -1,0 +1,82 @@
+.manageterms-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .manageterms-page-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .manageterms-section-form, .manageterms-section-list {
+    margin-bottom: 30px;
+  }
+  
+  .manageterms-form-header, .manageterms-list-header {
+    margin-bottom: 10px;
+  }
+  
+  .manageterms-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .manageterms-form-input, .manageterms-form-select, .manageterms-form-textarea, .manageterms-form-file-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .manageterms-form-textarea {
+    min-height: 100px;
+  }
+  
+  .manageterms-form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .manageterms-form-button, .manageterms-item-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .manageterms-form-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .manageterms-cancel-button {
+    background-color: #f44336;
+  }
+  
+  .manageterms-item-button {
+    background-color: #2196F3;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .manageterms-delete-button {
+    background-color: #f44336;
+  }
+  
+  .manageterms-section-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .manageterms-section-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .manageterms-item-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

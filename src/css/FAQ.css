@@ -1,0 +1,145 @@
+/* Container for the FAQ section */
+.FAQs-container {
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1200px; /* Maximum width for better layout control */
+}
+
+/* Title of the FAQ section */
+.FAQs-title {
+    font-size: 2rem;
+    color: #333; /* Dark gray color for title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for each FAQ section */
+.FAQs-info-section {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px; /* Space between sections */
+    overflow: hidden; /* Hide overflow for smooth transitions */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and scale */
+}
+
+/* Hover effect for FAQ section */
+.FAQs-info-section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.02);
+}
+.FAQs-answer p{
+padding: 15px;
+}
+/* Styling for the question header */
+.FAQs-question-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 0.9rem;
+    
+    cursor: pointer;
+    border-bottom: 1px solid #ddd; /* Light gray border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+/* Hover effect for question header */
+.FAQs-question-header:hover {
+    background-color: #e0f7f9; /* Light blue background on hover */
+    color: #333; /* Dark gray text color on hover */
+}
+
+/* Icon styling */
+.FAQs-icon {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    color: #6ee3e7; /* Accent color */
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+/* Hover effect for icon */
+.FAQs-question-header:hover .FAQs-icon {
+    color: #333; /* Dark gray for icon on hover */
+}
+
+/* Toggle icon styling */
+.FAQs-toggle-icon {
+    font-size: 1rem; /* Smaller font size */
+    color: #333; /* Dark gray for toggle icon */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for rotation and color */
+}
+
+/* Rotate toggle icon on expand */
+.FAQs-toggle-icon.expanded {
+    transform: rotate(180deg); /* Rotate icon when expanded */
+    color: #6ee3e7; /* Accent color for expanded state */
+}
+
+/* Answer styling */
+.FAQs-answer {
+    background-color: #fff; /* White background for answer */
+    max-height: 0; /* Hide answer initially */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for height and opacity */
+    opacity: 0; /* Hide answer initially */
+}
+
+/* Expand answer on active */
+.FAQs-answer.expanded {
+    max-height: 500px; /* Adjust to the maximum height of the expanded answer */
+    opacity: 1; /* Show answer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .FAQs-container {
+        padding: 10px;
+    }
+
+.FAQs-question-header {
+    font-size: 12px;
+}
+
+    .FAQs-toggle-icon {
+        margin-top: 10px;
+    }
+}
+@keyframes expand {
+    from { max-height: 0; opacity: 0; }
+    to { max-height: 200px; opacity: 1; }
+}
+
+@keyframes collapse {
+    from { max-height: 200px; opacity: 1; }
+    to { max-height: 0; opacity: 0; }
+}
+
+/* Apply these to the FAQ answer sections */
+.FAQs-answer {
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.FAQs-answer.expanded {
+    animation: expand 0.5s forwards;
+}
+
+.FAQs-answer.collapsed {
+    animation: collapse 0.5s forwards;
+}
+
+/* Optional styles for icons */
+.FAQs-icon {
+    margin-right: 10px;
+}
+.FAQs-toggle-icon {
+    margin-left: auto;
+    cursor: pointer;
+}
+.FAQs-toggle-icon.expanded {
+    transform: rotate(180deg);
+}

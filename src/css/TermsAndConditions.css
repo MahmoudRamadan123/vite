@@ -1,0 +1,71 @@
+/* TermsAndConditions.css */
+
+/* General Container */
+.terms-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .terms-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Loading and No Terms */
+  .terms-loading, .terms-no-terms {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 20px;
+  }
+  
+  /* Terms List */
+  .terms-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Term Item */
+  .term-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  /* Term Title */
+  .term-item-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  /* Term Content */
+  .term-item-content {
+    padding: 10px;
+  }
+  
+  .term-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .term-list {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .term-list-item {
+    margin-bottom: 5px;
+  }
+  
+  .term-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,176 @@
+/* Container for the contact page */
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Heading style */
+.contact-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Intro text style */
+.contact-intro {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Info cards container */
+.contact-info-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Map container style */
+.contact-map {
+  margin-bottom: 20px;
+}
+
+.map-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-map iframe {
+  border: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row style for grouping inputs */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Group style for inputs */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label style */
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Select input style */
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Input and textarea styles */
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: #6ee3e7;
+  outline: none;
+}
+
+/* Error message style */
+.form-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Submit button style */
+.form-submit {
+  background-color: #6ee3e7;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #5ab6c6;
+}
+
+.form-submit:active {
+  transform: scale(0.98);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

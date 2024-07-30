@@ -1,0 +1,510 @@
+/* Main container */
+.questions-page {
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 8px; 
+    min-width: 300px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Progress bar styles */
+.progress-container {
+    position: relative;
+    height: 5px;
+    background-color: #dcdcdc; /* Lighter gray background */
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #6ee3e7; /* Bright cyan */
+    transition: width 0.3s ease;
+}
+
+/* Question container styles */
+.question-container {
+    text-align: center;
+}
+
+.question-text {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+    transition: color 0.3s ease;
+}
+
+/* Radio buttons as styled buttons */
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-button {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #dcdcdc; /* Light gray border */
+    border-radius: 5px;
+    padding: 12px 24px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.radio-button.selected {
+    background-color: #6ee3e7; /* Bright cyan */
+    color: white;
+    border-color: #6ee3e7;
+}
+
+.radio-button:hover {
+    background-color: #e0e0e0; /* Light gray */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Select box styles */
+.select-box {
+    padding: 12px;
+    font-size: 1rem;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.select-box:focus {
+    border-color: #6ee3e7; /* Bright cyan border on focus */
+    outline: none;
+}
+
+/* Text input styles */
+.text-input {
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+    border-color: #6ee3e7; /* Bright cyan border on focus */
+    outline: none;
+}
+
+/* Date input styles */
+.date-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-input {
+    width: 30%;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.date-input:focus {
+    border-color: #6ee3e7; /* Bright cyan border on focus */
+    outline: none;
+}
+
+/* Name input styles */
+.name-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 5px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.name-input:focus {
+    border-color: #6ee3e7; /* Bright cyan border on focus */
+    outline: none;
+}
+
+/* Contact input styles */
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 5px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-input:focus {
+    border-color: #6ee3e7; /* Bright cyan border on focus */
+    outline: none;
+}
+
+/* Navigation buttons styles */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.submit-button {
+    background-color: #28a745; /* Green background */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* Navigation buttons styles */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.nav-button:disabled {
+    background-color: #dcdcdc; /* Light gray for disabled state */
+    color: #888; /* Darker gray for text */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    transform: none; /* Remove zoom effect */
+}
+
+/* Specific styles for the "Next" and "Back" buttons */
+.next-button {
+    background-color: #28a745; /* Green background */
+}
+
+.next-button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.back-button {
+    background-color: #6c757d; /* Gray background */
+}
+
+.back-button:hover {
+    background-color: #5a6268; /* Darker gray */
+}
+
+/* Submit button styles */
+.submit-button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.progress-container {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    height: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.question-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.radio-button.selected {
+    background-color: #4caf50;
+    color: white;
+}
+
+.select-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-box,
+.date-input input,
+.name-input input,
+.contact-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    height: 40px;
+}
+
+.date-input {
+    display: flex;
+    gap: 10px;
+}
+
+.date-input input {
+    width: 30%;
+}
+
+.name-input {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-button {
+    background-color: #6ee3e7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.progress-container {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    height: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.question-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.radio-button.selected {
+    background-color: #6ee3e7;
+    color: white;
+}
+
+.select-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.question-container input,
+.input-box,
+.date-input input,
+.name-input input,
+.contact-input input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    height: 40px;
+}
+
+.date-input {
+    display: flex;
+    gap: 10px;
+}
+
+.date-input input {
+    width: 30%;
+}
+
+.name-input {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-button {
+    background-color: #6ee3e7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.navigation-button:hover:not(:disabled) {
+    background-color: #6ee3e7;
+}

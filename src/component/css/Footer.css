@@ -1,0 +1,101 @@
+/* Container for the footer */
+.footer-container {
+    background-color: #ffffff; /* Light gray background */
+    padding: 40px;
+    border-top: 2px solid #ddd;
+}
+
+/* Top section with logo and badge */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo-image {
+    max-height: 50px; /* Adjust logo size */
+}
+
+.footer-badge {
+    background-color: #6ee3e7;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-badge-text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Content section */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-info a {
+    color: #6ee3e7;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section */
+.footer-contact {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}
+
+.footer-contact a {
+    color: #6ee3e7;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo-image {
+        max-height: 40px;
+    }
+
+    .footer-badge {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-badge-text {
+        font-size: 1rem;
+    }
+}

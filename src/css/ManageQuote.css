@@ -1,0 +1,101 @@
+/* src/css/ManageQuote.css */
+.manage-quote-container {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.quote-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quote-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.quote-item:hover {
+    background-color: #f0f0f0;
+}
+
+.quote-text {
+    font-weight: bold;
+    margin: 0;
+}
+
+.quote-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.view-button, .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6ee3e7; /* Light blue */
+    transition: color 0.3s ease;
+}
+
+.view-button:hover, .delete-button:hover {
+    color: #004d40; /* Darker blue */
+}
+
+.quote-details {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+}
+/* ManageQuote.css */
+
+/* Container for the search and filter controls */
+.search-filter {
+    margin: 20px 0;
+}
+
+/* Flex container to align search and filter controls horizontally */
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style for select and input elements */
+.filter-controls select,
+.filter-controls input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Placeholder style for input fields */
+.filter-controls input::placeholder {
+    color: #999;
+}
+
+/* Style for the select element */
+.filter-controls select {
+    background-color: #f9f9f9;
+}
+
+/* Style for the input element for search */
+.filter-controls input[type="text"] {
+    background-color: #fff;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .filter-controls {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,141 @@
+/* Container for the state selection section */
+.call-container-state {
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners */
+    max-width: 1000px; /* Max width for better layout control */
+    margin: 20px auto; /* Centered and spaced from other elements */
+    text-align: center; /* Centered text */
+    position: relative; /* For positioning the arrow icon */
+}
+
+/* Header styling */
+.call-header-state {
+    margin-bottom: 24px;
+}
+
+.call-title {
+    font-size: 2.8rem;
+    color: #333; /* Dark gray color */
+    margin-bottom: 12px;
+}
+
+.call-subtitle {
+    font-size: 1.4rem;
+    color: #666; /* Medium gray color */
+}
+
+/* States container styling */
+.call-states {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between items */
+}
+
+/* Individual state item styling */
+.call-state-item {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Button styling */
+.call-state-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6ee3e7; /* Accent color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 16px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for state buttons */
+.call-state-button:hover {
+    background-color: #5bb8c6; /* Slightly darker shade */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Arrow icon styling */
+.call-arrow-icon {
+    margin-left: 8px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .call-title {
+        font-size: 2.2rem;
+    }
+
+    .call-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .call-state-button {
+        font-size: 1rem;
+    }
+}
+
+.state-item {
+    animation: fadeIn 1s ease-out;
+}
+
+
+
+.state-arrow-icon {
+    margin-left: 10px;
+}
+
+
+
+.call-arrow-icon {
+    margin-left: 8px;
+}
+
+/* Mobile styles */
+.call-mobile {
+    display: none;
+    text-align: center;
+}
+
+.call-select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .call-states {
+        display: none;
+    }
+
+    .call-mobile {
+        display: block;
+    }
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,142 @@
+/* src/css/ManageFAQs.css */
+.manage-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.manage-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    background: #6ee3e7; /* Light blue */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #004d40; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.faq-list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.faq-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6ee3e7; /* Light blue */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.actions button:hover {
+    color: #004d40; /* Darker blue */
+    transform: scale(1.1);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.popup-content h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.popup-content textarea {
+    height: 100px;
+}
+
+.popup-content button {
+    background: #6ee3e7; /* Light blue */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.popup-content button:hover {
+    background-color: #004d40; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.cancel-button {
+    background: #ddd;
+    color: #000;
+}
+
+.cancel-button:hover {
+    background-color: #ccc;
+}

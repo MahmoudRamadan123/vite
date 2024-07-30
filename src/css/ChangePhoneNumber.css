@@ -1,0 +1,58 @@
+/* src/css/ChangePhoneNumber.css */
+.change-phone-number-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.change-phone-number-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.phone-number-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.phone-number-form label {
+    font-weight: bold;
+}
+
+.phone-number-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.phone-number-form button {
+    background: #6ee3e7; /* Light blue */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.phone-number-form button:hover {
+    background-color: #004d40; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.phone-number-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #28a745; /* Success color */
+    text-align: center;
+}

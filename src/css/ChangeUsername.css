@@ -1,0 +1,63 @@
+/* src/css/ChangeUsername.css */
+.change-username-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.change-username-container h2 {
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    font-size: 40px;
+    color: #6ee3e7; /* Light blue */
+    margin-bottom: 20px;
+}
+
+.change-username-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.change-username-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.change-username-form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.submit-button {
+    background: #6ee3e7; /* Light blue */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #004d40; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.message {
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+}

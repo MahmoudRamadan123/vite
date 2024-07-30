@@ -1,0 +1,42 @@
+.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.thank-you-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #28a745; /* Green color for emphasis */
+}
+
+.thank-you-page p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.thank-you-page .button-container {
+    margin-top: 20px;
+}
+
+.thank-you-page .button-container a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Blue background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-page .button-container a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

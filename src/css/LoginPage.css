@@ -1,0 +1,119 @@
+/* src/css/LoginPage.css */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light gray background */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in;
+}
+
+.login-container {
+    background: #ffffff; 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: popIn 0.6s ease-out;
+}
+
+.logo-container {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-login {
+    width: 100px;
+    height: auto;
+    animation: logoBounce 1s ease-in-out infinite;
+}
+
+.login-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333; /* Dark gray text */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+.login-form{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.input-label {
+    display: block;
+    font-size: 14px;
+    color: #666; /* Medium gray text */
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #6ee3e7; /* Light blue border on focus */
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6ee3e7; /* Light blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #55d4e0; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes logoBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

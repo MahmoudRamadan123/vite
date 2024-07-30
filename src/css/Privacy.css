@@ -1,0 +1,71 @@
+/* Privacy.css */
+
+/* General Container */
+.privacy-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .privacy-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Loading and No Policies */
+  .privacy-loading, .privacy-no-policies {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 20px;
+  }
+  
+  /* Privacy Policy List */
+  .privacy-policy-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Privacy Policy Item */
+  .privacy-policy-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  /* Policy Title */
+  .privacy-policy-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  /* Policy Content */
+  .privacy-policy-content {
+    padding: 10px;
+  }
+  
+  .privacy-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .privacy-list {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .privacy-list-item {
+    margin-bottom: 5px;
+  }
+  
+  .privacy-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  

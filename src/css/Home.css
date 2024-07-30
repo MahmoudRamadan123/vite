@@ -1,0 +1,506 @@
+
+.feature {
+    display: flex;
+    justify-content: space-between; 
+    margin: 30px auto;
+    padding: 20px;
+    overflow-x: hidden;
+    background-color: #fff; 
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    flex: 1; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature-icon {
+    font-size: 2.5rem; 
+    color: #6ee3e7; 
+}
+.feature-text {
+    font-size: 1.1rem; 
+    color: #333;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .feature {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .feature-item {
+        margin-bottom: 20px; 
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    color: black;
+}
+.about .info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    max-width: 500px;
+}
+.Qualify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #6ee3e7;
+    color: black;
+    flex-direction: column;
+}
+
+/* Container for the CTA section */
+.call-cta-section {
+    padding: 40px;
+    background-color: #f5f5f5; 
+    max-width: 100%; /* Max width for better layout control */
+    margin: 20px auto; /* Centered and spaced from other elements */
+    text-align: center; /* Centered text */
+    position: relative; /* Position relative for the pulsing icon */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Title styling */
+.call-title {
+    font-size: 2.8rem;
+    color: #333; /* Dark gray color */
+    margin-bottom: 12px;
+}
+
+/* Description styling */
+.call-description {
+    font-size: 1.3rem;
+    color: #666; /* Medium gray color */
+    margin-bottom: 24px;
+}
+
+/* Phone link styling */
+.call-phone-link {
+    display: block;
+    font-size: 1.6rem;
+    color: #6ee3e7; /* Accent color */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 24px;
+    
+    color: #f5f5f5; 
+    background-color: #6ee3e7;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for phone link */
+.call-phone-link:hover {
+    color: #333; /* Dark gray color on hover */
+}
+
+/* Button container styling */
+.call-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Position relative for the pulsing icon */
+}
+
+/* Pulsing icon styling */
+.call-pulsing-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #6ee3e7; /* Accent color */
+    border-radius: 50%;
+    position: absolute; /* Position absolute for animation */
+    animation: pulse 1.5s infinite; /* Pulsing animation */
+    z-index: -1; /* Behind the button */
+}
+
+/* Pulsing animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.6);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+}
+
+/* CTA button styling */
+.call-cta-button {
+    color: #474747; /* White text */
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+
+/* Additional information section */
+.call-info-section {
+    margin-top: 24px;
+}
+
+/* Info text styling */
+.call-info-text {
+    font-size: 1.1rem;
+    color: #333; /* Dark gray color */
+}
+
+/* Office link styling */
+.call-office-link {
+    color: #f5f5f5; 
+    background-color: #6ee3e7;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for office link */
+.call-office-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Image container styling */
+.call-image-container {
+    margin-top: 30px;
+}
+.sectionss{
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    max-width: 500px;
+    flex-direction: column;
+}
+/* Image styling */
+.call-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .call-title {
+        font-size: 2.2rem;
+    }
+
+    .call-description {
+        font-size: 1.1rem;
+    }
+
+    .call-phone-link {
+        font-size: 1.4rem;
+    }
+
+    .call-cta-button {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+}
+
+.pulsing-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #28a745;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+    display: inline-block;
+    margin-right: 10px;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Container for the info section */
+.last-info-container {
+    padding: 40px;
+    background-color: #f5f5f5;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Flex container for layout */
+.last-info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left section styling */
+.last-info-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.last-info-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: last-fadeInLeft 1s ease-out;
+}
+
+.last-info-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Plan form styling */
+.last-plan-content {
+    margin-top: 20px;
+}
+
+.last-plan-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.last-plan-form form{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.last-plan-input-group {
+    position: relative;
+}
+
+.last-plan-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.last-plan-input:focus {
+    border-color: #6ee3e7;
+    outline: none;
+}
+
+.last-plan-input-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #999;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.last-plan-input:focus + .last-plan-input-label {
+    transform: translateY(-20px);
+    font-size: 0.8rem;
+    color: #6ee3e7;
+}
+
+.last-plan-button-container {
+    flex-shrink: 0;
+}
+
+.last-plan-button {
+    padding: 12px 20px;
+    background-color: #6ee3e7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.last-plan-button:hover {
+    background-color: #5bb8c6;
+    transform: translateY(-2px);
+}
+
+/* Right section styling */
+.last-info-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.last-call-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: last-fadeInRight 1s ease-out;
+}
+
+.last-call-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.last-call-number {
+    display: block;
+    font-size: 1.5rem;
+    background-color: #6ee3e7;
+    padding: 12px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px 0;
+}
+
+.last-call-number:hover {
+    text-decoration: underline;
+}
+
+/* CTA section styling */
+.last-cta-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.last-pulsing-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #6ee3e7;
+    animation: last-pulse 1.5s infinite;
+}
+
+.last-cta-button {
+    padding: 12px 20px;
+    color: #5a5a5a;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.last-cta-button:hover {
+    background-color: #5bb8c6;
+    transform: translateY(-2px);
+}
+
+/* Pulse animation */
+@keyframes last-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fade-in animations */
+@keyframes last-fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes last-fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .last-info-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .last-info-title, .last-call-title {
+        font-size: 1.8rem;
+    }
+
+    .last-info-subtitle, .last-call-subtitle {
+        font-size: 1rem;
+    }
+
+    .last-plan-button {
+        font-size: 0.9rem;
+    }
+
+    .last-call-number {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:768px) {
+    .last-plan-form{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .last-plan-button-container{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+}

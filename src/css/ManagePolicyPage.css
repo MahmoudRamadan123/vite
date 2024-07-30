@@ -1,0 +1,81 @@
+.managepolicy-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .managepolicy-form {
+    margin-bottom: 30px;
+  }
+  
+  .managepolicy-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .managepolicy-input, .managepolicy-select, .managepolicy-textarea, .managepolicy-file-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  .managepolicy-textarea {
+    min-height: 100px;
+  }
+  
+  .managepolicy-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .managepolicy-button {
+    background-color: #4CAF50;
+  }
+  
+  .managepolicy-cancel-button {
+    background-color: #f44336;
+  }
+  
+  .managepolicy-list {
+    margin-top: 20px;
+  }
+  
+  .managepolicy-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .managepolicy-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .managepolicy-item-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .managepolicy-item-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .managepolicy-edit-button {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .managepolicy-delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  

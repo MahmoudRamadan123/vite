@@ -1,0 +1,157 @@
+
+*{
+  margin:0;
+  transform: all 0.2s ease;
+  font-family: sans-serif;
+}
+.header .priv-header{
+  width: 100%;
+  height: 50px;
+  background-color:#faf9e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.header .header-sub{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 70px;
+  background-color:#6ee3e7;
+}
+.header .contact{
+  display: flex;
+  gap:7px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  color:black;
+  position: relative;
+  margin-right: 20px;
+}
+.header .contact::before{
+  content: "";
+  width: 5px;
+  height: 100%;
+  z-index: 0;
+  background:black;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  transition: 0.3s all;
+  left:0;
+}
+.header .contact:hover{
+color:#f5f5f5;
+}
+.header .contact p,
+.header .contact svg{
+position: relative;
+z-index: 7;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(5deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.header .contact:hover  svg path{
+  fill: #f5f5f5;
+  animation: rotate 0.5s linear infinite;
+  }
+.header .contact:hover::before{
+  width: 100%;
+}
+.header .logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+}/* Define animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutToLeft {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutToRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes slideInFromTop {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideOutToTop {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-100%); opacity: 0; }
+}
+
+@keyframes slideInFromBottom {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideOutToBottom {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(100%); opacity: 0; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes zoomOut {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.9); opacity: 0; }
+}
+
+/* Add these to elements when they are visible */
+.animate-fadeIn { animation: fadeIn 1s forwards; }
+.animate-fadeOut { animation: fadeOut 1s forwards; }
+.animate-slideInFromLeft { animation: slideInFromLeft 1s forwards; }
+.animate-slideOutToLeft { animation: slideOutToLeft 1s forwards; }
+.animate-slideInFromRight { animation: slideInFromRight 1s forwards; }
+.animate-slideOutToRight { animation: slideOutToRight 1s forwards; }
+.animate-slideInFromTop { animation: slideInFromTop 1s forwards; }
+.animate-slideOutToTop { animation: slideOutToTop 1s forwards; }
+.animate-slideInFromBottom { animation: slideInFromBottom 1s forwards; }
+.animate-slideOutToBottom { animation: slideOutToBottom 1s forwards; }
+.animate-zoomIn { animation: zoomIn 1s forwards; }
+.animate-zoomOut { animation: zoomOut 1s forwards; }
